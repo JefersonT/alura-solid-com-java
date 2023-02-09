@@ -12,7 +12,11 @@
   - Acoplamento nem sempre é ruim e é impossível criar um sistema sem nenhum acoplamento
   - Devemos controlar o nível de acoplamento na nossa aplicação (falaremos mais sobre isso)
 
-[//]: # (## AULA 02. )
+## AULA 02. Melhorando a coesão
+- Que classes/métodos/funções/módulos devem ter uma única responsabilidade bem definida;
+- Que, segundo o **Princípio de Responsabilidade Única (SRP)**, uma classe deve ter um e apenas um motivo para ser alterada;
+- Como realizar uma refatoração no nosso sistema, para aplicar o SRP;
+- Como extrair uma classe
 
 [//]: # (## AULA 03. )
 
