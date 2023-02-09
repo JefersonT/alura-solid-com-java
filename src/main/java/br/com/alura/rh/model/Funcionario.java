@@ -14,20 +14,15 @@ import lombok.Setter;
 @Setter
 public class Funcionario {
 
-	private String nome;
-	private String cpf;
-	private Cargo cargo;
-	private BigDecimal salario;
+	private DadosPessoais dadosPessoais;
 	private LocalDate dataUltimoReajuste;
 
-	public Funcionario(String nome, String cpf, Cargo cargo, BigDecimal salario) {
-		this.nome = nome;
-		this.cpf = cpf;
-		this.cargo = cargo;
-		this.salario = salario;
+	public void atualizaSalario(BigDecimal salarioReajustado) {
+		this.dadosPessoais.setSalario(salarioReajustado);
+		this.dataUltimoReajuste = LocalDate.now();
 	}
 
-	public void atualizaSalario(BigDecimal salarioReajustado) {
-		this.salario = salarioReajustado;
-	}
+    public void promover(Cargo novoCargo) {
+		dadosPessoais.setCargo(novoCargo);
+    }
 }
